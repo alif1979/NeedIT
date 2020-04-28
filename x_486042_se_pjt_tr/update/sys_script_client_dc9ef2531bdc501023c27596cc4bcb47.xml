@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>true</applies_extended>
+        <condition/>
+        <description/>
+        <field>change_number</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>CHG_crnumber_update</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+
+   //Type appropriate comment here, and begin script below
+	var ga = new GlideAjax("PullCRDetails");
+	ga.addParam('sysparm_name', 'getCRDetails');
+	ga.addParam('sysparm_uChangeNumber', newValue);
+	ga.getXML(CRcallBackFunction);
+	
+	function durationCallBackFunction(response) {
+		var answer = response.responseXML.documentElement.getAttribute('answer');
+		g_form.setValue('se_hours_consumed', answer);
+	}	
+
+	function UsercallBackFunction(response) {
+		var answer = response.responseXML.documentElement.getAttribute('answer');
+		var v = [];
+		var a = answer.split(",");
+		v.push(a[0]);
+		v.push(a[1]);
+		g_form.setValue('primary_se', v[1] + ", " + v[0]);
+	}	
+	
+	function CRcallBackFunction(response) {
+		var answer = response.responseXML.documentElement.getAttribute('answer');
+		var v = [];
+		var a = answer.split(",");
+		v.push(a[0]);
+		v.push(a[1]);
+		v.push(a[2]);
+		v.push(a[3]);
+		v.push(a[4]);
+		v.push(a[5]);
+		v.push(a[6]);
+		g_form.setValue('cr_start_time', v[0]);
+		g_form.setValue('cr_end_time', v[1]);
+		g_form.setValue('risk', v[2]);
+		g_form.setValue('status', v[3]);
+		g_form.setValue('change_description', v[5]);
+		g_form.setValue('scope_of_work', v[6]);
+
+		var ga1 = new GlideAjax("PullUserNameDetails");
+		ga1.addParam('sysparm_name', 'getUserDetails');
+		ga1.addParam('sysparm_uname', v[4]);
+		ga1.getXML(UsercallBackFunction);
+		
+		var ga2 = new GlideAjax("getTimeDifference");
+		ga2.addParam('sysparm_name', 'timeDifference');
+		ga2.addParam('sysparm_start', g_form.getValue("cr_start_time"));
+		ga2.addParam('sysparm_end', g_form.getValue("cr_end_time"));
+		ga2.getXML(durationCallBackFunction);
+
+	
+	}
+   
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-26 09:40:33</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>dc9ef2531bdc501023c27596cc4bcb47</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>CHG_crnumber_update</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SE Project Tracker" source="x_486042_se_pjt_tr">69444e861b10101023c27596cc4bcb20</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SE Project Tracker">69444e861b10101023c27596cc4bcb20</sys_scope>
+        <sys_update_name>sys_script_client_dc9ef2531bdc501023c27596cc4bcb47</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-27 02:06:23</sys_updated_on>
+        <table>x_486042_se_pjt_tr_changes</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

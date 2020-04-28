@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_aw_list">
+    <sys_aw_list action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category display_value="Tasks">0257e64e1b50101023c27596cc4bcbb7</category>
+        <columns>number,priority,state,assigned_to,assignment_group,short_description,opened_at,opened_by,closed_at,closed_by</columns>
+        <condition/>
+        <groups/>
+        <list_attributes/>
+        <order>400</order>
+        <roles/>
+        <sys_class_name>sys_aw_list</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 10:44:17</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8257e64e1b50101023c27596cc4bcbbc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>All</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SE Project Tracker" source="x_486042_se_pjt_tr">69444e861b10101023c27596cc4bcb20</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SE Project Tracker">69444e861b10101023c27596cc4bcb20</sys_scope>
+        <sys_update_name>sys_aw_list_8257e64e1b50101023c27596cc4bcbbc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 10:44:17</sys_updated_on>
+        <table>task</table>
+        <title>All</title>
+        <workspace display_value="SE Project Tracker">3857e6861b50101023c27596cc4bcb77</workspace>
+    </sys_aw_list>
+</record_update>

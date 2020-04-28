@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" label="Changes" max_length="40" name="x_486042_se_pjt_tr_changes" sizeclass="8" text_index="true" type="collection">
+        <element attributes="encode_utf8=false" label="ATT PM / Lead" max_length="32" name="att_pm_lead" reference="sys_user" type="reference"/>
+        <element attributes="encode_utf8=false" label="Backup SE" max_length="32" name="backup_se" reference="sys_user" type="reference"/>
+        <element attributes="encode_utf8=false" label="Change Description" max_length="32" name="change_description" read_only="true" type="string"/>
+        <element attributes="encode_utf8=false" label="Change Number" mandatory="true" max_length="32" name="change_number" reference="change_request" type="reference" unique="true"/>
+        <element attributes="encode_utf8=false" label="Country" max_length="32" name="country" reference="cmn_location" type="reference"/>
+        <element attributes="encode_utf8=false" label="CR END time" max_length="40" name="cr_end_time" read_only="true" type="glide_date_time"/>
+        <element attributes="encode_utf8=false" label="CR Start time" max_length="40" name="cr_start_time" read_only="true" type="glide_date_time"/>
+        <element attributes="encode_utf8=false" label="IBM PM / Lead" max_length="32" name="ibm_pm_lead" reference="sys_user" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Network Type" max_length="40" name="network_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Data" value="data"/>
+                <element inactive_on_update="false" label="Firewall" value="firewall"/>
+                <element inactive_on_update="false" label="Server" value="server"/>
+                <element inactive_on_update="false" label="Voice" value="voice"/>
+                <element inactive_on_update="false" label="Wireless" value="wireless"/>
+            </choice>
+        </element>
+        <element default="javascript:getNextObjNumberPadded();" dynamic_default_value="fdcb83a85f220100a9ad2572f2b4773c" label="number" max_length="40" name="number" type="string" use_dynamic_default="true"/>
+        <element attributes="encode_utf8=false" label="Primary SE" max_length="40" name="primary_se" type="string"/>
+        <element attributes="edge_encryption_enabled=true" dependent="project_updates" dependent_on_field="project_updates" label="Project Updates" max_length="40" name="project_updates" type="journal" use_dependent_field="true"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="bau" label="Request Type" max_length="40" name="request_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="BAU" value="bau"/>
+                <element inactive_on_update="false" label="GECEP" value="gecep"/>
+                <element inactive_on_update="false" label="SR" value="sr"/>
+            </choice>
+        </element>
+        <element attributes="encode_utf8=false" choice="3" default="None" label="Risk" max_length="40" name="risk" read_only="true" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="High" sequence="0" value="2"/>
+                <element inactive_on_update="false" label="Moderate" sequence="1" value="3"/>
+                <element inactive_on_update="false" label="Low" sequence="2" value="4"/>
+                <element inactive_on_update="false" label="Very High" sequence="3" value="1"/>
+                <element inactive_on_update="false" label="None" sequence="4" value="5"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Scope of work" max_length="400" name="scope_of_work" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="SE Hours Consumed" max_length="40" name="se_hours_consumed" type="glide_duration"/>
+        <element attributes="encode_utf8=false" choice="1" label="Status" max_length="32" name="status" read_only="true" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="New" sequence="0" value="-5"/>
+                <element inactive_on_update="false" label="Assess" sequence="1" value="-4"/>
+                <element inactive_on_update="false" label="Authorize" sequence="2" value="-3"/>
+                <element inactive_on_update="false" label="Scheduled" sequence="3" value="-2"/>
+                <element inactive_on_update="false" label="Implement" sequence="4" value="-1"/>
+                <element inactive_on_update="false" label="Review" sequence="5" value="0"/>
+                <element inactive_on_update="false" label="Closed" sequence="6" value="3"/>
+                <element inactive_on_update="false" label="Canceled" sequence="7" value="4"/>
+                <element inactive_on_update="false" label="Open" sequence="8" value="1"/>
+                <element inactive_on_update="false" label="In Progress" sequence="9" value="2"/>
+            </choice>
+        </element>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <index name="index">
+            <element name="country"/>
+        </index>
+        <index name="index2">
+            <element name="change_description"/>
+        </index>
+        <index name="index3">
+            <element name="cr_end_time"/>
+        </index>
+        <index name="index4">
+            <element name="backup_se"/>
+        </index>
+        <index name="index5">
+            <element name="att_pm_lead"/>
+        </index>
+        <index name="index6">
+            <element name="change_number"/>
+        </index>
+        <index name="index7">
+            <element name="primary_se"/>
+        </index>
+        <index name="index8">
+            <element name="sys_class_name"/>
+        </index>
+        <index name="index9">
+            <element name="ibm_pm_lead"/>
+        </index>
+        <index name="index10">
+            <element name="risk"/>
+        </index>
+        <index name="index11">
+            <element name="cr_start_time"/>
+        </index>
+        <index name="index12">
+            <element name="status"/>
+        </index>
+    </element>
+</database>

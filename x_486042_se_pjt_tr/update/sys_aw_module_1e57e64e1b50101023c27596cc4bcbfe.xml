@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_aw_module">
+    <sys_aw_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <content display_value="Inbox Module Content">56572a4e1b50101023c27596cc4bcb07</content>
+        <content_attrs/>
+        <content_component display_value="sn-inbox">15415f6bc913d31534330f91530c944c</content_component>
+        <content_tag/>
+        <detail display_value="Inbox Module Detail">92572a4e1b50101023c27596cc4bcb0d</detail>
+        <detail_attrs/>
+        <detail_component display_value="sn-inbox-empty">ee222d2bff222300294153bd6338f113</detail_component>
+        <detail_tag/>
+        <hide_until_ready>false</hide_until_ready>
+        <icon>inbox-outline</icon>
+        <id>inbox</id>
+        <label>Inbox</label>
+        <order>200</order>
+        <roles/>
+        <sys_class_name>sys_aw_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 10:44:18</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1e57e64e1b50101023c27596cc4bcbfe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>inbox</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SE Project Tracker" source="x_486042_se_pjt_tr">69444e861b10101023c27596cc4bcb20</sys_package>
+        <sys_policy/>
+        <sys_props/>
+        <sys_scope display_value="SE Project Tracker">69444e861b10101023c27596cc4bcb20</sys_scope>
+        <sys_update_name>sys_aw_module_1e57e64e1b50101023c27596cc4bcbfe</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 10:44:18</sys_updated_on>
+        <toolbar_button display_value="Inbox Button">5257e64e1b50101023c27596cc4bcbff</toolbar_button>
+        <type>master_detail</type>
+        <workspace_config display_value="SE Project Tracker">3857e6861b50101023c27596cc4bcb77</workspace_config>
+    </sys_aw_module>
+    <sys_variable_value action="delete_multiple" query="document_key=1e57e64e1b50101023c27596cc4bcbfe"/>
+</record_update>

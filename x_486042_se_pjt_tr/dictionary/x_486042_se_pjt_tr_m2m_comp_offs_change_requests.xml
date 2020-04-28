@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="x_486042_se_pjt_tr_m2m_comp-offs_change_requests" max_length="40" name="x_486042_se_pjt_tr_m2m_comp_offs_change_requests" sizeclass="0" type="collection">
+        <element attributes="encode_utf8=false" label="Change Request" max_length="32" name="change_request" reference="change_request" type="reference"/>
+        <element attributes="encode_utf8=false" label="Comp-Off" max_length="32" name="comp_off" reference="x_486042_se_pjt_tr_comp_off" type="reference"/>
+        <index name="index">
+            <element name="comp_off"/>
+        </index>
+        <index name="index2">
+            <element name="change_request"/>
+        </index>
+    </element>
+</database>

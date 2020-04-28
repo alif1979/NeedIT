@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_486042_se_pjt_tr.PullCRDetails</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>PullCRDetails</name>
+        <script><![CDATA[var PullCRDetails = Class.create();
+PullCRDetails.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+		
+	getCRDetails: function() {
+		var gr = new GlideRecord("change_request");
+		gr.get(this.getParameter("sysparm_uChangeNumber"));
+		gr.query();
+		if (gr.next()) {
+			var gc = [gr.getValue("work_start"),
+						gr.getValue("work_end"),
+						gr.getValue("risk"),
+						gr.getValue("state"),
+						gr.getValue("assigned_to"),
+						gr.getValue("short_description"),
+						gr.getValue("description"),
+			];
+			return gc.toString();
+		}
+	},
+	
+    type: 'PullCRDetails'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-25 05:22:48</sys_created_on>
+        <sys_id>a6887c871b9c101023c27596cc4bcb7c</sys_id>
+        <sys_mod_count>73</sys_mod_count>
+        <sys_name>PullCRDetails</sys_name>
+        <sys_package display_value="SE Project Tracker" source="x_486042_se_pjt_tr">69444e861b10101023c27596cc4bcb20</sys_package>
+        <sys_policy>protected</sys_policy>
+        <sys_scope display_value="SE Project Tracker">69444e861b10101023c27596cc4bcb20</sys_scope>
+        <sys_update_name>sys_script_include_a6887c871b9c101023c27596cc4bcb7c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-27 01:43:29</sys_updated_on>
+    </sys_script_include>
+</record_update>

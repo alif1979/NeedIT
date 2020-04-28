@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_aw_list">
+    <sys_aw_list action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category display_value="Projects">8a57e64e1b50101023c27596cc4bcbc2</category>
+        <columns>backup_se_active_hours_consumed,backup_se_non_billable_hours,country,gecep_approved_date,gecep_assigned_date,gecep_closed_date,gecep_description,gecep_number,gecep_revenue,gecep_se_hours_allocated,high_level_scope_of_gecep,ibm_pm_lead,iga_backup_se,iga_pm_lead,iga_primary_se,network_type,primary_se_hours_consumed,primary_se_non_billable_hours,project_updates,remarks,risk,sd_team_revenue,status,sys_class_name,sys_created_by,sys_created_on,sys_id,sys_mod_count,sys_tags,sys_updated_by,sys_updated_on,total_billable_hours,total_number_of_days</columns>
+        <condition/>
+        <groups/>
+        <list_attributes/>
+        <order>100</order>
+        <roles/>
+        <sys_class_name>sys_aw_list</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 10:44:17</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ce57e64e1b50101023c27596cc4bcbc3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>All</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SE Project Tracker" source="x_486042_se_pjt_tr">69444e861b10101023c27596cc4bcb20</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SE Project Tracker">69444e861b10101023c27596cc4bcb20</sys_scope>
+        <sys_update_name>sys_aw_list_ce57e64e1b50101023c27596cc4bcbc3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 10:44:17</sys_updated_on>
+        <table>x_486042_se_pjt_tr_projects</table>
+        <title>All</title>
+        <workspace display_value="SE Project Tracker">3857e6861b50101023c27596cc4bcb77</workspace>
+    </sys_aw_list>
+</record_update>

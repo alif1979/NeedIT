@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_page_registry">
+    <sys_ux_page_registry action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_panel>3857e6861b50101023c27596cc4bcb77</admin_panel>
+        <admin_panel_table>sys_aw_master_config</admin_panel_table>
+        <page display_value="Workspace Core">b70867ad0f603300bb57f4a1ff767e15</page>
+        <path>workspace/se_project_tracker</path>
+        <sys_class_name>sys_ux_page_registry</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 10:44:12</sys_created_on>
+        <sys_id>3057e6861b50101023c27596cc4bcb78</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>SE Project Tracker</sys_name>
+        <sys_package display_value="SE Project Tracker" source="x_486042_se_pjt_tr">69444e861b10101023c27596cc4bcb20</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SE Project Tracker">69444e861b10101023c27596cc4bcb20</sys_scope>
+        <sys_update_name>sys_ux_page_registry_3057e6861b50101023c27596cc4bcb78</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 10:44:12</sys_updated_on>
+        <title>SE Project Tracker</title>
+    </sys_ux_page_registry>
+</record_update>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_change_number" label="Change Number" language="en" table="x_486042_se_pjt_tr_comp_off">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_change_number</element>
+            <help/>
+            <hint/>
+            <label>Change Number</label>
+            <language>en</language>
+            <name>x_486042_se_pjt_tr_comp_off</name>
+            <plural>Change Numbers</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-04-23 02:18:11</sys_created_on>
+            <sys_id>de1db91e1b58101023c27596cc4bcbe2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Change Number</sys_name>
+            <sys_package display_value="SE Project Tracker" source="x_486042_se_pjt_tr">69444e861b10101023c27596cc4bcb20</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="SE Project Tracker">69444e861b10101023c27596cc4bcb20</sys_scope>
+            <sys_update_name>sys_documentation_x_486042_se_pjt_tr_comp_off_u_change_number_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-04-23 02:18:11</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

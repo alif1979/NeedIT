@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_package_dependency_m2m">
+    <sys_package_dependency_m2m action="INSERT_OR_UPDATE">
+        <dependency display_value="Service Management Basics" source="com.snc.service">93ae3e681bd0101023c27596cc4bcbd8</dependency>
+        <min_version>1.0.0</min_version>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-26 01:38:46</sys_created_on>
+        <sys_id>4ad05d931b98501023c27596cc4bcb2b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="SE Project Tracker" source="x_486042_se_pjt_tr">69444e861b10101023c27596cc4bcb20</sys_package>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-26 01:38:46</sys_updated_on>
+    </sys_package_dependency_m2m>
+</record_update>

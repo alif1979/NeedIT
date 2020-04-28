@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>false</active>
+        <applies_extended>true</applies_extended>
+        <condition/>
+        <description/>
+        <field>cr_end_time</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>CHG_cr_endtime_update</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+
+	var ga = new GlideAjax("getTimeDifference");
+	ga.addParam('sysparm_name', 'timeDifference');
+	ga.addParam('sysparm_start', g_form.getValue("cr_start_time"));
+	ga.addParam('sysparm_end', g_form.getValue("cr_end_time"));
+	ga.getXML(callBackFunction);
+	alert(ga.sysparm_start);
+	alert(ga.sysparm_end);
+
+	function callBackFunction(response) {
+		var answer = response.responseXML.documentElement.getAttribute('answer');
+		g_form.setValue('se_hours_consumed', answer);
+	}	
+   
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-27 01:36:55</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9fc812af1bd4901023c27596cc4bcb69</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>CHG_cr_endtime_update</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SE Project Tracker" source="x_486042_se_pjt_tr">69444e861b10101023c27596cc4bcb20</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SE Project Tracker">69444e861b10101023c27596cc4bcb20</sys_scope>
+        <sys_update_name>sys_script_client_9fc812af1bd4901023c27596cc4bcb69</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-27 01:47:41</sys_updated_on>
+        <table>x_486042_se_pjt_tr_changes</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SE Project Tracker">69444e861b10101023c27596cc4bcb20</application>
+        <file_path/>
+        <instance_id>43ac41bddbe393404c1ff70fbf961977</instance_id>
+        <instance_name>dev67414</instance_name>
+        <name>sys_script_client_9fc812af1bd4901023c27596cc4bcb69</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;false&lt;/active&gt;&lt;applies_extended&gt;true&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field&gt;cr_end_time&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;CHG_cr_endtime_update&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+
+	var ga = new GlideAjax("getTimeDifference");
+	ga.addParam('sysparm_name', 'timeDifference');
+	ga.addParam('sysparm_start', g_form.getValue("cr_start_time"));
+	ga.addParam('sysparm_end', g_form.getValue("cr_end_time"));
+	ga.getXML(callBackFunction);
+	alert(ga.sysparm_start);
+	alert(ga.sysparm_end);
+
+	function callBackFunction(response) {
+		var answer = response.responseXML.documentElement.getAttribute('answer');
+		g_form.setValue('se_hours_consumed', answer);
+	}	
+   
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-04-27 01:36:55&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;9fc812af1bd4901023c27596cc4bcb69&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;CHG_cr_endtime_update&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="SE Project Tracker" source="x_486042_se_pjt_tr"&gt;69444e861b10101023c27596cc4bcb20&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SE Project Tracker"&gt;69444e861b10101023c27596cc4bcb20&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_9fc812af1bd4901023c27596cc4bcb69&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-04-27 01:47:41&lt;/sys_updated_on&gt;&lt;table&gt;x_486042_se_pjt_tr_changes&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-417765750</payload_hash>
+        <record_name>CHG_cr_endtime_update</record_name>
+        <reverted_from/>
+        <source>e9444e861b10101023c27596cc4bcb22</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-27 01:47:41</sys_created_on>
+        <sys_id>927c5a631b18901023c27596cc4bcbf8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>171b9518c360000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-27 01:47:41</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>1e7c5a6322189010b5ea60c81d6ddff7</update_guid>
+        <update_guid_history>1e7c5a6322189010b5ea60c81d6ddff7:-417765750,2d1c5a63c51890106df518af9d062e47:1365494903,680a9eefe4d4901040a275f67f1efc38:-303804748</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-27 02:08:52</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>728fd7464a0349348908480af9239310</sys_id>
+        <sys_metadata>9fc812af1bd4901023c27596cc4bcb69</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CHG_cr_endtime_update</sys_name>
+        <sys_package display_value="SE Project Tracker" source="x_486042_se_pjt_tr">69444e861b10101023c27596cc4bcb20</sys_package>
+        <sys_parent display_value="Changes">55cac2ca1b10101023c27596cc4bcb67</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="SE Project Tracker">69444e861b10101023c27596cc4bcb20</sys_scope>
+        <sys_scope_delete display_value="">b75d24fec8704c80a3c040d3079da799</sys_scope_delete>
+        <sys_update_name>sys_script_client_9fc812af1bd4901023c27596cc4bcb69</sys_update_name>
+        <sys_update_version display_value="sys_script_client_9fc812af1bd4901023c27596cc4bcb69">927c5a631b18901023c27596cc4bcbf8</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-27 02:08:52</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
