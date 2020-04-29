@@ -1,18 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="u_change_number" table="x_486042_se_pjt_tr_comp_off">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="apply_comp_off" table="x_486042_se_pjt_tr_changes">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>encode_utf8=false</attributes>
+        <attributes/>
         <audit>false</audit>
-        <calculation/>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
         <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label>Change Number</column_label>
+        <column_label>Apply Comp-Off</column_label>
         <comments/>
         <create_roles/>
-        <default_value/>
+        <default_value>false</default_value>
         <defaultsort/>
         <delete_roles/>
         <dependent/>
@@ -22,20 +27,20 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>u_change_number</element>
+        <element>apply_comp_off</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <function_definition/>
         <function_field>false</function_field>
-        <internal_type display_value="Reference">reference</internal_type>
-        <mandatory>true</mandatory>
-        <max_length>32</max_length>
-        <name>x_486042_se_pjt_tr_comp_off</name>
+        <internal_type display_value="">boolean</internal_type>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <name>x_486042_se_pjt_tr_changes</name>
         <next_element/>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
-        <reference display_value="" name="change_request">change_request</reference>
+        <reference/>
         <reference_cascade_rule/>
         <reference_floats>false</reference_floats>
         <reference_key/>
@@ -47,16 +52,16 @@
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-04-23 02:18:11</sys_created_on>
-        <sys_id>de1db91e1b58101023c27596cc4bcbd2</sys_id>
-        <sys_mod_count>5</sys_mod_count>
-        <sys_name>Change Number</sys_name>
+        <sys_created_on>2020-04-29 00:53:56</sys_created_on>
+        <sys_id>190320dc1b20101023c27596cc4bcbc2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Apply Comp-Off</sys_name>
         <sys_package display_value="SE Project Tracker" source="x_486042_se_pjt_tr">69444e861b10101023c27596cc4bcb20</sys_package>
         <sys_policy/>
         <sys_scope display_value="SE Project Tracker">69444e861b10101023c27596cc4bcb20</sys_scope>
-        <sys_update_name>sys_dictionary_x_486042_se_pjt_tr_comp_off_u_change_number</sys_update_name>
+        <sys_update_name>sys_dictionary_x_486042_se_pjt_tr_changes_apply_comp_off</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-04-26 00:45:46</sys_updated_on>
+        <sys_updated_on>2020-04-29 00:53:56</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

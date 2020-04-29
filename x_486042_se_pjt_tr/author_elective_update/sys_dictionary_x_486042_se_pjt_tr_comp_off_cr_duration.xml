@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_dictionary action="DELETE" element="cr_duration" table="x_486042_se_pjt_tr_comp_off">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>edge_encryption_enabled=true</attributes>
+        <audit>false</audit>
+        <calculation/>
+        <choice>0</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label>CR 
+Duration</column_label>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>cr_duration</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <internal_type display_value="">glide_duration</internal_type>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <name>x_486042_se_pjt_tr_comp_off</name>
+        <next_element/>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_dictionary</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 09:02:09</sys_created_on>
+        <sys_id>06ff8a8e1b10101023c27596cc4bcbc3</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>CR 
+Duration</sys_name>
+        <sys_package display_value="SE Project Tracker" source="x_486042_se_pjt_tr">69444e861b10101023c27596cc4bcb20</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SE Project Tracker">69444e861b10101023c27596cc4bcb20</sys_scope>
+        <sys_update_name>sys_dictionary_x_486042_se_pjt_tr_comp_off_cr_duration</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-27 08:26:01</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_dictionary>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SE Project Tracker">69444e861b10101023c27596cc4bcb20</application>
+        <file_path/>
+        <instance_id>43ac41bddbe393404c1ff70fbf961977</instance_id>
+        <instance_name>dev67414</instance_name>
+        <name>sys_dictionary_x_486042_se_pjt_tr_comp_off_cr_duration</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="INSERT_OR_UPDATE" element="cr_duration" table="x_486042_se_pjt_tr_comp_off"><active>true</active><array>false</array><array_denormalized>false</array_denormalized><attributes>edge_encryption_enabled=true</attributes><audit>false</audit><calculation/><choice>0</choice><choice_field/><choice_table/><column_label>CR 
+Duration</column_label><comments/><create_roles/><default_value/><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value/><dynamic_ref_qual/><element>cr_duration</element><element_reference>false</element_reference><foreign_database/><function_definition/><function_field>false</function_field><internal_type display_value="">glide_duration</internal_type><mandatory>false</mandatory><max_length>40</max_length><name>x_486042_se_pjt_tr_comp_off</name><next_element/><primary>false</primary><read_only>false</read_only><read_roles/><reference/><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_qual_condition/><reference_type/><sizeclass/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-04-22 09:02:09</sys_created_on><sys_id>06ff8a8e1b10101023c27596cc4bcbc3</sys_id><sys_mod_count>8</sys_mod_count><sys_name>CR 
+Duration</sys_name><sys_package display_value="SE Project Tracker" source="x_486042_se_pjt_tr">69444e861b10101023c27596cc4bcb20</sys_package><sys_policy/><sys_scope display_value="SE Project Tracker">69444e861b10101023c27596cc4bcb20</sys_scope><sys_update_name>sys_dictionary_x_486042_se_pjt_tr_comp_off_cr_duration</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-04-27 08:26:01</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+        <payload_hash>273301552</payload_hash>
+        <record_name>Comp-Off.CR 
+Duration</record_name>
+        <reverted_from/>
+        <source>e9444e861b10101023c27596cc4bcb22</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-27 08:26:01</sys_created_on>
+        <sys_id>0da7bf631b1c901023c27596cc4bcb4d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>171babe3a850000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-27 08:26:01</sys_updated_on>
+        <type>Dictionary</type>
+        <update_guid>85a7bf63b91c901069e6718c7b95734d</update_guid>
+        <update_guid_history>85a7bf63b91c901069e6718c7b95734d:273301552,5967fb63e71c9010fec6e99ed61690aa:1162437463,10273763391c9010f3e9443cd33268e0:-1083013956,e5e6f3631c1c90105f9712c6b5eab33d:273301552,90a633637a1c9010795eab11a6368ac9:-1699352127,c5067b238c1c9010bc22c5625bcd9d74:273301552,f7b577239a1c9010275e1fe5c46f2a81:-846896542,ee92aaa7ac1890104d49ec1d3724fe2e:273301552,42ff8a8ecf1010101c68dd0352fe17f8:-846896542</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-29 01:03:51</sys_created_on>
+        <sys_db_object display_value="" name="sys_dictionary">sys_dictionary</sys_db_object>
+        <sys_id>0964fe303ffa4a1fb444b2a9a7241259</sys_id>
+        <sys_metadata>06ff8a8e1b10101023c27596cc4bcbc3</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CR 
+Duration</sys_name>
+        <sys_package display_value="SE Project Tracker" source="x_486042_se_pjt_tr">69444e861b10101023c27596cc4bcb20</sys_package>
+        <sys_parent display_value="Comp-Off">b5ff8a8e1b10101023c27596cc4bcb58</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="SE Project Tracker">69444e861b10101023c27596cc4bcb20</sys_scope>
+        <sys_scope_delete display_value="">b75d24fec8704c80a3c040d3079da799</sys_scope_delete>
+        <sys_update_name>sys_dictionary_x_486042_se_pjt_tr_comp_off_cr_duration</sys_update_name>
+        <sys_update_version display_value="sys_dictionary_x_486042_se_pjt_tr_comp_off_cr_duration">0da7bf631b1c901023c27596cc4bcb4d</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-29 01:03:51</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

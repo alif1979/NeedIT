@@ -4,13 +4,13 @@
             <element>number</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-04-26 03:45:45</sys_created_on>
-            <sys_id>c2ed295b1bd8501023c27596cc4bcba3</sys_id>
+            <sys_created_on>2020-04-29 01:07:17</sys_created_on>
+            <sys_id>9e66a4901b60101023c27596cc4bcba2</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_486042_se_pjt_tr_comp_off" sys_domain="global" view="Default view">a60cee021b90101023c27596cc4bcb64</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-04-26 03:45:45</sys_updated_on>
+            <sys_updated_on>2020-04-29 01:07:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>att_uid</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-04-26 03:45:45</sys_created_on>
-            <sys_id>4aed295b1bd8501023c27596cc4bcba3</sys_id>
+            <sys_created_on>2020-04-29 01:07:17</sys_created_on>
+            <sys_id>1266a4901b60101023c27596cc4bcba3</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_486042_se_pjt_tr_comp_off" sys_domain="global" view="Default view">a60cee021b90101023c27596cc4bcb64</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-04-26 03:45:45</sys_updated_on>
+            <sys_updated_on>2020-04-29 01:07:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,153 +32,83 @@
             <element>name_of_resource</element>
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-04-26 03:45:45</sys_created_on>
-            <sys_id>ceed295b1bd8501023c27596cc4bcba3</sys_id>
+            <sys_created_on>2020-04-29 01:07:17</sys_created_on>
+            <sys_id>9266a4901b60101023c27596cc4bcba3</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_486042_se_pjt_tr_comp_off" sys_domain="global" view="Default view">a60cee021b90101023c27596cc4bcb64</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-04-26 03:45:45</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>request_type</element>
-            <position>3</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-04-26 03:45:45</sys_created_on>
-            <sys_id>46ed295b1bd8501023c27596cc4bcba4</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_486042_se_pjt_tr_comp_off" sys_domain="global" view="Default view">a60cee021b90101023c27596cc4bcb64</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-04-26 03:45:45</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_change_number</element>
-            <position>4</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-04-26 03:45:45</sys_created_on>
-            <sys_id>caed295b1bd8501023c27596cc4bcba4</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_486042_se_pjt_tr_comp_off" sys_domain="global" view="Default view">a60cee021b90101023c27596cc4bcb64</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-04-26 03:45:45</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>description_of_activity</element>
-            <position>5</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-04-26 03:45:45</sys_created_on>
-            <sys_id>42ed295b1bd8501023c27596cc4bcba5</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_486042_se_pjt_tr_comp_off" sys_domain="global" view="Default view">a60cee021b90101023c27596cc4bcb64</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-04-26 03:45:45</sys_updated_on>
+            <sys_updated_on>2020-04-29 01:07:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>6</position>
+            <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-04-26 03:45:45</sys_created_on>
-            <sys_id>c6ed295b1bd8501023c27596cc4bcba5</sys_id>
+            <sys_created_on>2020-04-29 01:07:17</sys_created_on>
+            <sys_id>1666a4901b60101023c27596cc4bcba3</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_486042_se_pjt_tr_comp_off" sys_domain="global" view="Default view">a60cee021b90101023c27596cc4bcb64</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-04-26 03:45:45</sys_updated_on>
+            <sys_updated_on>2020-04-29 01:07:17</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>network_type</element>
-            <position>7</position>
+            <element>comp_off_days</element>
+            <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-04-26 03:45:45</sys_created_on>
-            <sys_id>4eed295b1bd8501023c27596cc4bcba5</sys_id>
+            <sys_created_on>2020-04-29 01:07:17</sys_created_on>
+            <sys_id>9666a4901b60101023c27596cc4bcba3</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_486042_se_pjt_tr_comp_off" sys_domain="global" view="Default view">a60cee021b90101023c27596cc4bcb64</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-04-26 03:45:45</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>change_start_time</element>
-            <position>8</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-04-26 03:45:45</sys_created_on>
-            <sys_id>c2ed295b1bd8501023c27596cc4bcba6</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_486042_se_pjt_tr_comp_off" sys_domain="global" view="Default view">a60cee021b90101023c27596cc4bcb64</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-04-26 03:45:45</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>change_finish_time</element>
-            <position>9</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-04-26 03:45:45</sys_created_on>
-            <sys_id>4aed295b1bd8501023c27596cc4bcba6</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_486042_se_pjt_tr_comp_off" sys_domain="global" view="Default view">a60cee021b90101023c27596cc4bcb64</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-04-26 03:45:45</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>cr_duration</element>
-            <position>10</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-04-26 03:45:45</sys_created_on>
-            <sys_id>ceed295b1bd8501023c27596cc4bcba6</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_486042_se_pjt_tr_comp_off" sys_domain="global" view="Default view">a60cee021b90101023c27596cc4bcb64</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-04-26 03:45:45</sys_updated_on>
+            <sys_updated_on>2020-04-29 01:07:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>se_change_hours_consumed</element>
-            <position>11</position>
+            <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-04-26 03:45:45</sys_created_on>
-            <sys_id>46ed295b1bd8501023c27596cc4bcba7</sys_id>
+            <sys_created_on>2020-04-29 01:07:17</sys_created_on>
+            <sys_id>1a66a4901b60101023c27596cc4bcba3</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_486042_se_pjt_tr_comp_off" sys_domain="global" view="Default view">a60cee021b90101023c27596cc4bcb64</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-04-26 03:45:45</sys_updated_on>
+            <sys_updated_on>2020-04-29 01:07:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>comp_off_days</element>
-            <position>12</position>
+            <element>comp_off_hours_pending</element>
+            <position>6</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-04-26 03:45:45</sys_created_on>
-            <sys_id>caed295b1bd8501023c27596cc4bcba7</sys_id>
+            <sys_created_on>2020-04-29 01:10:45</sys_created_on>
+            <sys_id>3c3760d01b60101023c27596cc4bcb80</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_486042_se_pjt_tr_comp_off" sys_domain="global" view="Default view">a60cee021b90101023c27596cc4bcb64</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-04-26 03:45:45</sys_updated_on>
+            <sys_updated_on>2020-04-29 01:10:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>comp_off_status</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-04-29 01:10:45</sys_created_on>
+            <sys_id>f83760d01b60101023c27596cc4bcb88</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_486042_se_pjt_tr_comp_off" sys_domain="global" view="Default view">a60cee021b90101023c27596cc4bcb64</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-04-29 01:10:45</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

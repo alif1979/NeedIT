@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>public</access>
+        <active>false</active>
+        <api_name>x_486042_se_pjt_tr.CO_Hours_and_status_update_script</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>CO_Hours_and_status_update_script</name>
+        <script><![CDATA[var CO_Hours_and_status_update_script = Class.create();
+CO_Hours_and_status_update_script.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+	calc_hours_status: function(){
+		jslog("entered in to callback func");
+		total = this.getParameter("sysparm_total");
+		taken = this.getParameter("sysparm_taken");
+		if (total == ''){
+			total = 0;
+		}
+		if (taken == ''){
+			taken = 0;
+		}
+		jslog("total = " + total + "taken=" + taken);
+		if (taken <= total){
+			pending = 0;
+			status = "Taken";
+		} else if (total == 0){
+			pending = 0;
+			status = "New";
+		} else {
+			pending = total - taken;
+			if (pending == 0){
+				status = "Pending";
+			} else {
+				status = "Partially Taken";
+			}
+		}
+		jslog(pending, status);
+		var ps = [pending, status];	
+		return ps.toString();	
+	},
+	
+	
+    type: 'CO_Hours_and_status_update_script'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-29 01:42:40</sys_created_on>
+        <sys_id>68fb28941b60101023c27596cc4bcb65</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>CO_Hours_and_status_update_script</sys_name>
+        <sys_package display_value="SE Project Tracker" source="x_486042_se_pjt_tr">69444e861b10101023c27596cc4bcb20</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="SE Project Tracker">69444e861b10101023c27596cc4bcb20</sys_scope>
+        <sys_update_name>sys_script_include_68fb28941b60101023c27596cc4bcb65</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-29 02:42:13</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SE Project Tracker">69444e861b10101023c27596cc4bcb20</application>
+        <file_path/>
+        <instance_id>43ac41bddbe393404c1ff70fbf961977</instance_id>
+        <instance_name>dev67414</instance_name>
+        <name>sys_script_include_68fb28941b60101023c27596cc4bcb65</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;false&lt;/active&gt;&lt;api_name&gt;x_486042_se_pjt_tr.CO_Hours_and_status_update_script&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;CO_Hours_and_status_update_script&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var CO_Hours_and_status_update_script = Class.create();
+CO_Hours_and_status_update_script.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+	calc_hours_status: function(){
+		jslog("entered in to callback func");
+		total = this.getParameter("sysparm_total");
+		taken = this.getParameter("sysparm_taken");
+		if (total == ''){
+			total = 0;
+		}
+		if (taken == ''){
+			taken = 0;
+		}
+		jslog("total = " + total + "taken=" + taken);
+		if (taken &lt;= total){
+			pending = 0;
+			status = "Taken";
+		} else if (total == 0){
+			pending = 0;
+			status = "New";
+		} else {
+			pending = total - taken;
+			if (pending == 0){
+				status = "Pending";
+			} else {
+				status = "Partially Taken";
+			}
+		}
+		jslog(pending, status);
+		var ps = [pending, status];	
+		return ps.toString();	
+	},
+	
+	
+    type: 'CO_Hours_and_status_update_script'
+});]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-04-29 01:42:40&lt;/sys_created_on&gt;&lt;sys_id&gt;68fb28941b60101023c27596cc4bcb65&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;CO_Hours_and_status_update_script&lt;/sys_name&gt;&lt;sys_package display_value="SE Project Tracker" source="x_486042_se_pjt_tr"&gt;69444e861b10101023c27596cc4bcb20&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="SE Project Tracker"&gt;69444e861b10101023c27596cc4bcb20&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_68fb28941b60101023c27596cc4bcb65&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-04-29 02:42:13&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1959790811</payload_hash>
+        <record_name>CO_Hours_and_status_update_script</record_name>
+        <reverted_from/>
+        <source>590210d01b20101023c27596cc4bcbe8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-29 02:42:13</sys_created_on>
+        <sys_id>742cf4501ba0101023c27596cc4bcb24</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>171c3d032680000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-29 02:42:13</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>bc2cf45040a01010b8266381661deb23</update_guid>
+        <update_guid_history>bc2cf45040a01010b8266381661deb23:1959790811,7f3ab01062a01010cdd77ee2713313f2:-2087945586,56f8f89cd5601010dacf098966814221:189048451,0b58b89c4260101043c340d0825d1a73:1044778950,2954b058756010109fab328108853e69:1254422096,2c8e249477601010a2f28f75ed8e9d35:1277957260</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-29 03:07:06</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>783a1588a9b14100bce9526409f95490</sys_id>
+        <sys_metadata>68fb28941b60101023c27596cc4bcb65</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CO_Hours_and_status_update_script</sys_name>
+        <sys_package display_value="SE Project Tracker" source="x_486042_se_pjt_tr">69444e861b10101023c27596cc4bcb20</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="SE Project Tracker">69444e861b10101023c27596cc4bcb20</sys_scope>
+        <sys_scope_delete display_value="">b75d24fec8704c80a3c040d3079da799</sys_scope_delete>
+        <sys_update_name>sys_script_include_68fb28941b60101023c27596cc4bcb65</sys_update_name>
+        <sys_update_version display_value="sys_script_include_68fb28941b60101023c27596cc4bcb65">742cf4501ba0101023c27596cc4bcb24</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-29 03:07:06</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_documentation element="network_type" label="Network Type" language="en" table="x_486042_se_pjt_tr_comp_off">
+    <sys_documentation element="project_lmac_ref" label="Project Reference" language="en" table="x_486042_se_pjt_tr_changes">
         <sys_documentation action="INSERT_OR_UPDATE">
-            <element>network_type</element>
+            <element>project_lmac_ref</element>
             <help/>
             <hint/>
-            <label>Network Type</label>
+            <label>Project Reference</label>
             <language>en</language>
-            <name>x_486042_se_pjt_tr_comp_off</name>
-            <plural>Network Types</plural>
+            <name>x_486042_se_pjt_tr_changes</name>
+            <plural>Project References</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-04-22 09:02:09</sys_created_on>
-            <sys_id>82ff8a8e1b10101023c27596cc4bcbd1</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_name>Network Type</sys_name>
+            <sys_created_on>2020-04-29 00:35:46</sys_created_on>
+            <sys_id>d43fd81c1b20101023c27596cc4bcbcc</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>Project Reference</sys_name>
             <sys_package display_value="SE Project Tracker" source="x_486042_se_pjt_tr">69444e861b10101023c27596cc4bcb20</sys_package>
             <sys_policy/>
             <sys_scope display_value="SE Project Tracker">69444e861b10101023c27596cc4bcb20</sys_scope>
-            <sys_update_name>sys_documentation_x_486042_se_pjt_tr_comp_off_network_type_en</sys_update_name>
+            <sys_update_name>sys_documentation_x_486042_se_pjt_tr_changes_project_lmac_ref_en</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-04-22 09:02:09</sys_updated_on>
+            <sys_updated_on>2020-04-29 00:42:49</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>

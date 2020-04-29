@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="DELETE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>false</action_update>
+        <active>false</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_486042_se_pjt_tr_projects</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_486042_se_pjt_tr_projects">sys_mod_count=Updates^EQ<item endquery="false" field="sys_mod_count" goto="false" newquery="false" operator="=" or="false" value="Updates"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Project Updates</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+var gr = new GlideRecord("projects");
+gr.addQuery("parent", current.sys_id);
+gr.query();
+while (gr.next()) {
+    gr.Updates = current.updates.getJournalEntry(1);
+    gr.update();
+}
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>NB</sys_created_by>
+        <sys_created_on>2020-04-28 06:02:47</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4bff58481be4d01023c27596cc4bcb0f</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Project Updates</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SE Project Tracker" source="x_486042_se_pjt_tr">69444e861b10101023c27596cc4bcb20</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SE Project Tracker">69444e861b10101023c27596cc4bcb20</sys_scope>
+        <sys_update_name>sys_script_4bff58481be4d01023c27596cc4bcb0f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-28 07:11:18</sys_updated_on>
+        <template>sys_mod_count=^EQ</template>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="DELETE" query="documentkey=4bff58481be4d01023c27596cc4bcb0f"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SE Project Tracker">69444e861b10101023c27596cc4bcb20</application>
+        <file_path/>
+        <instance_id>43ac41bddbe393404c1ff70fbf961977</instance_id>
+        <instance_name>dev67414</instance_name>
+        <name>sys_script_4bff58481be4d01023c27596cc4bcb0f</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;false&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;false&lt;/action_update&gt;&lt;active&gt;false&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;x_486042_se_pjt_tr_projects&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition table="x_486042_se_pjt_tr_projects"&gt;sys_mod_count=Updates^EQ&lt;item endquery="false" field="sys_mod_count" goto="false" newquery="false" operator="=" or="false" value="Updates"/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/filter_condition&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;Project Updates&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/) {
+var gr = new GlideRecord("projects");
+gr.addQuery("parent", current.sys_id);
+gr.query();
+while (gr.next()) {
+    gr.Updates = current.updates.getJournalEntry(1);
+    gr.update();
+}
+
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;NB&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-04-28 06:02:47&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;4bff58481be4d01023c27596cc4bcb0f&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;Project Updates&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="SE Project Tracker" source="x_486042_se_pjt_tr"&gt;69444e861b10101023c27596cc4bcb20&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SE Project Tracker"&gt;69444e861b10101023c27596cc4bcb20&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_4bff58481be4d01023c27596cc4bcb0f&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-04-28 07:11:18&lt;/sys_updated_on&gt;&lt;template&gt;sys_mod_count=^EQ&lt;/template&gt;&lt;when&gt;after&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=4bff58481be4d01023c27596cc4bcb0f"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-598434704</payload_hash>
+        <record_name>Project Updates</record_name>
+        <reverted_from/>
+        <source>e9444e861b10101023c27596cc4bcb22</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-28 07:11:18</sys_created_on>
+        <sys_id>e82038c81b28d01023c27596cc4bcbec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>171bfa031670000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-28 07:11:18</sys_updated_on>
+        <type>Business Rule</type>
+        <update_guid>e02038c86d28d01070b36752c5b508ec</update_guid>
+        <update_guid_history>e02038c86d28d01070b36752c5b508ec:-598434704,a9c86c845728d0101e9f863e49fff97d:35822309,8a88a884ec28d0107cd8b14337432da8:1373807520,45706040ad28d01074700fbd5b9ab7f2:-1311023921</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-28 23:50:35</sys_created_on>
+        <sys_db_object display_value="" name="sys_script">sys_script</sys_db_object>
+        <sys_id>291a089061c247828b00ce94b1f04e84</sys_id>
+        <sys_metadata>4bff58481be4d01023c27596cc4bcb0f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Project Updates</sys_name>
+        <sys_package display_value="SE Project Tracker" source="x_486042_se_pjt_tr">69444e861b10101023c27596cc4bcb20</sys_package>
+        <sys_parent display_value="Projects">c3fdc24e1b10101023c27596cc4bcbfc</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="SE Project Tracker">69444e861b10101023c27596cc4bcb20</sys_scope>
+        <sys_scope_delete display_value="">b75d24fec8704c80a3c040d3079da799</sys_scope_delete>
+        <sys_update_name>sys_script_4bff58481be4d01023c27596cc4bcb0f</sys_update_name>
+        <sys_update_version display_value="sys_script_4bff58481be4d01023c27596cc4bcb0f">e82038c81b28d01023c27596cc4bcbec</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-28 23:50:35</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="cr_duration" table="x_486042_se_pjt_tr_comp_off">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="comp_off_id" table="x_486042_se_pjt_tr_changes">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>edge_encryption_enabled=true</attributes>
+        <attributes/>
         <audit>false</audit>
-        <calculation/>
-        <choice>0</choice>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label>CR 
-Duration</column_label>
+        <column_label>Comp-Off ID</column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -23,20 +27,20 @@ Duration</column_label>
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>cr_duration</element>
+        <element>comp_off_id</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <function_definition/>
         <function_field>false</function_field>
-        <internal_type display_value="">glide_duration</internal_type>
+        <internal_type display_value="Reference">reference</internal_type>
         <mandatory>false</mandatory>
-        <max_length>40</max_length>
-        <name>x_486042_se_pjt_tr_comp_off</name>
+        <max_length>32</max_length>
+        <name>x_486042_se_pjt_tr_changes</name>
         <next_element/>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
-        <reference/>
+        <reference display_value="" name="x_486042_se_pjt_tr_comp_off">x_486042_se_pjt_tr_comp_off</reference>
         <reference_cascade_rule/>
         <reference_floats>false</reference_floats>
         <reference_key/>
@@ -48,17 +52,16 @@ Duration</column_label>
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-04-22 09:02:09</sys_created_on>
-        <sys_id>06ff8a8e1b10101023c27596cc4bcbc3</sys_id>
-        <sys_mod_count>8</sys_mod_count>
-        <sys_name>CR 
-Duration</sys_name>
+        <sys_created_on>2020-04-29 00:53:56</sys_created_on>
+        <sys_id>a113e4dc1b20101023c27596cc4bcb12</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Comp-Off ID</sys_name>
         <sys_package display_value="SE Project Tracker" source="x_486042_se_pjt_tr">69444e861b10101023c27596cc4bcb20</sys_package>
         <sys_policy/>
         <sys_scope display_value="SE Project Tracker">69444e861b10101023c27596cc4bcb20</sys_scope>
-        <sys_update_name>sys_dictionary_x_486042_se_pjt_tr_comp_off_cr_duration</sys_update_name>
+        <sys_update_name>sys_dictionary_x_486042_se_pjt_tr_changes_comp_off_id</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-04-27 08:26:01</sys_updated_on>
+        <sys_updated_on>2020-04-29 00:53:56</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

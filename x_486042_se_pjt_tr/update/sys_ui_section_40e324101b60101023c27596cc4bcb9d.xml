@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Comp-Off Related" section_id="40e324101b60101023c27596cc4bcb9d" sys_domain="global" table="x_486042_se_pjt_tr_changes" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>apply_comp_off</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-04-29 00:57:09</sys_created_on>
+            <sys_id>e514e4101b60101023c27596cc4bcb6f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Comp-Off Related" display_value="Comp-Off Related" name="x_486042_se_pjt_tr_changes" sys_domain="global" view="Default view">40e324101b60101023c27596cc4bcb9d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-04-29 00:57:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>comp_off_id</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-04-29 00:57:09</sys_created_on>
+            <sys_id>6914e4101b60101023c27596cc4bcb6f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Comp-Off Related" display_value="Comp-Off Related" name="x_486042_se_pjt_tr_changes" sys_domain="global" view="Default view">40e324101b60101023c27596cc4bcb9d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-04-29 00:57:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-04-29 00:57:09</sys_created_on>
+            <sys_id>e914e4101b60101023c27596cc4bcb6f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Comp-Off Related" display_value="Comp-Off Related" name="x_486042_se_pjt_tr_changes" sys_domain="global" view="Default view">40e324101b60101023c27596cc4bcb9d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-04-29 00:57:09</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Comp-Off Related</caption>
+            <header>false</header>
+            <name>x_486042_se_pjt_tr_changes</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-04-29 00:56:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>40e324101b60101023c27596cc4bcb9d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Comp-Off Related</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="SE Project Tracker" source="x_486042_se_pjt_tr">69444e861b10101023c27596cc4bcb20</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="SE Project Tracker">69444e861b10101023c27596cc4bcb20</sys_scope>
+            <sys_update_name>sys_ui_section_40e324101b60101023c27596cc4bcb9d</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-04-29 00:56:13</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

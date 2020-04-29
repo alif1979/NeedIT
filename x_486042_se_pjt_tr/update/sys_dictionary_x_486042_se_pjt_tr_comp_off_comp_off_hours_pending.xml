@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="change_start_time" table="x_486042_se_pjt_tr_comp_off">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="comp_off_hours_pending" table="x_486042_se_pjt_tr_comp_off">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>encode_utf8=false</attributes>
+        <attributes/>
         <audit>false</audit>
-        <calculation/>
-        <choice>0</choice>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label>Change Start Time</column_label>
+        <column_label>Comp-off Hours Pending</column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -22,12 +27,12 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>change_start_time</element>
+        <element>comp_off_hours_pending</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <function_definition/>
         <function_field>false</function_field>
-        <internal_type display_value="">glide_date_time</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
         <name>x_486042_se_pjt_tr_comp_off</name>
@@ -47,16 +52,16 @@
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-04-22 09:02:09</sys_created_on>
-        <sys_id>06ff8a8e1b10101023c27596cc4bcbb3</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_name>Change Start Time</sys_name>
+        <sys_created_on>2020-04-29 01:10:45</sys_created_on>
+        <sys_id>52f6a4901b60101023c27596cc4bcbbd</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Comp-off Hours Pending</sys_name>
         <sys_package display_value="SE Project Tracker" source="x_486042_se_pjt_tr">69444e861b10101023c27596cc4bcb20</sys_package>
         <sys_policy/>
         <sys_scope display_value="SE Project Tracker">69444e861b10101023c27596cc4bcb20</sys_scope>
-        <sys_update_name>sys_dictionary_x_486042_se_pjt_tr_comp_off_change_start_time</sys_update_name>
+        <sys_update_name>sys_dictionary_x_486042_se_pjt_tr_comp_off_comp_off_hours_pending</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-04-26 00:57:34</sys_updated_on>
+        <sys_updated_on>2020-04-29 03:11:57</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

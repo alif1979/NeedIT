@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element audit="true" label="Changes" max_length="40" name="x_486042_se_pjt_tr_changes" sizeclass="8" text_index="true" type="collection">
+        <element label="Apply Comp-Off" max_length="40" name="apply_comp_off" type="boolean"/>
         <element attributes="encode_utf8=false" label="ATT PM / Lead" max_length="32" name="att_pm_lead" reference="sys_user" type="reference"/>
         <element attributes="encode_utf8=false" label="Backup SE" max_length="32" name="backup_se" reference="sys_user" type="reference"/>
         <element attributes="encode_utf8=false" label="Change Description" max_length="32" name="change_description" read_only="true" type="string"/>
         <element attributes="encode_utf8=false" label="Change Number" mandatory="true" max_length="32" name="change_number" reference="change_request" type="reference" unique="true"/>
+        <element label="Comp-Off ID" max_length="32" name="comp_off_id" reference="x_486042_se_pjt_tr_comp_off" type="reference"/>
         <element attributes="encode_utf8=false" label="Country" max_length="32" name="country" reference="cmn_location" type="reference"/>
         <element attributes="encode_utf8=false" label="CR END time" max_length="40" name="cr_end_time" read_only="true" type="glide_date_time"/>
         <element attributes="encode_utf8=false" label="CR Start time" max_length="40" name="cr_start_time" read_only="true" type="glide_date_time"/>
@@ -19,6 +21,7 @@
         </element>
         <element default="javascript:getNextObjNumberPadded();" dynamic_default_value="fdcb83a85f220100a9ad2572f2b4773c" label="number" max_length="40" name="number" type="string" use_dynamic_default="true"/>
         <element attributes="encode_utf8=false" label="Primary SE" max_length="40" name="primary_se" type="string"/>
+        <element label="Project Reference" max_length="32" name="project_lmac_ref" reference="x_486042_se_pjt_tr_projects" type="reference"/>
         <element attributes="edge_encryption_enabled=true" dependent="project_updates" dependent_on_field="project_updates" label="Project Updates" max_length="40" name="project_updates" type="journal" use_dependent_field="true"/>
         <element attributes="edge_encryption_enabled=true" choice="3" default="bau" label="Request Type" max_length="40" name="request_type" type="choice">
             <choice>
@@ -72,21 +75,27 @@
             <element name="change_number"/>
         </index>
         <index name="index7">
-            <element name="primary_se"/>
+            <element name="comp_off_id"/>
         </index>
         <index name="index8">
-            <element name="sys_class_name"/>
+            <element name="project_lmac_ref"/>
         </index>
         <index name="index9">
-            <element name="ibm_pm_lead"/>
+            <element name="primary_se"/>
         </index>
         <index name="index10">
-            <element name="risk"/>
+            <element name="sys_class_name"/>
         </index>
         <index name="index11">
-            <element name="cr_start_time"/>
+            <element name="ibm_pm_lead"/>
         </index>
         <index name="index12">
+            <element name="risk"/>
+        </index>
+        <index name="index13">
+            <element name="cr_start_time"/>
+        </index>
+        <index name="index14">
             <element name="status"/>
         </index>
     </element>

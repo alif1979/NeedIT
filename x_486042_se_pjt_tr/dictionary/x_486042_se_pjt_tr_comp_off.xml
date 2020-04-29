@@ -1,49 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element audit="true" label="Comp-Off" max_length="40" name="x_486042_se_pjt_tr_comp_off" sizeclass="2" text_index="true" type="collection">
         <element attributes="edge_encryption_enabled=true" label="ATT UID" mandatory="true" max_length="40" name="att_uid" reference="sys_user" type="reference"/>
-        <element attributes="encode_utf8=false" label="Change Finish Time" max_length="40" name="change_finish_time" read_only="true" type="glide_date_time"/>
-        <element attributes="encode_utf8=false" label="Change Start Time" max_length="40" name="change_start_time" read_only="true" type="glide_date_time"/>
-        <element label="Comp-off Days" max_length="40" name="comp_off_days" type="integer"/>
+        <element label="Total Comp-off Hours" max_length="40" name="comp_off_days" type="integer"/>
+        <element label="Comp-off Hours Pending" max_length="40" name="comp_off_hours_pending" read_only="true" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Comp-off Remarks" max_length="40" name="comp_off_remarks" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="CR &#10;Duration" max_length="40" name="cr_duration" type="glide_duration"/>
-        <element attributes="encode_utf8=false" label="Description of Activity" max_length="40" name="description_of_activity" read_only="true" type="string"/>
+        <element default="New" display="true" label="Comp-off Status" max_length="40" name="comp_off_status" read_only="true" type="string"/>
         <element attributes="encode_utf8=false" label="Name of &#10;resource" max_length="32" name="name_of_resource" read_only="true" reference="sys_user" type="string"/>
-        <element attributes="edge_encryption_enabled=true" choice="3" label="Network Type" max_length="40" name="network_type" type="choice">
-            <choice>
-                <element inactive_on_update="false" label="Data" sequence="0" value="data"/>
-                <element inactive_on_update="false" label="Others" sequence="1"/>
-                <element inactive_on_update="false" label="Security" sequence="2" value="security"/>
-                <element inactive_on_update="false" label="Voice" sequence="3" value="voice"/>
-                <element inactive_on_update="false" label="Wireless" sequence="4" value="wireless"/>
-            </choice>
-        </element>
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
-        <element attributes="edge_encryption_enabled=true" choice="3" default="bau" label="Request&#10;Type" max_length="40" name="request_type" type="choice">
-            <choice>
-                <element inactive_on_update="false" label="BAU" value="bau"/>
-                <element inactive_on_update="false" label="GECEP" value="gecep"/>
-                <element inactive_on_update="false" label="SR" value="sr"/>
-            </choice>
-        </element>
-        <element attributes="edge_encryption_enabled=true" label="SE Change Hours Consumed" max_length="40" name="se_change_hours_consumed" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="Comp-off Hours Consumed" max_length="40" name="se_change_hours_consumed" type="integer"/>
         <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
-        <element attributes="encode_utf8=false" label="Change Number" mandatory="true" max_length="32" name="u_change_number" reference="change_request" type="reference"/>
         <index name="index">
-            <element name="change_finish_time"/>
-        </index>
-        <index name="index2">
-            <element name="change_start_time"/>
-        </index>
-        <index name="index3">
-            <element name="u_change_number"/>
-        </index>
-        <index name="index4">
             <element name="name_of_resource"/>
         </index>
-        <index name="index5">
-            <element name="description_of_activity"/>
-        </index>
-        <index name="index6">
+        <index name="index2">
             <element name="sys_class_name"/>
         </index>
     </element>

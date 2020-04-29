@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_policy">
+    <sys_ui_policy action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <conditions table="x_486042_se_pjt_tr_comp_off">se_change_hours_consumed&gt;=0^ORcomp_off_hours_pending&gt;=0^EQ<item endquery="false" field="se_change_hours_consumed" goto="false" newquery="false" operator="&gt;=" or="false" value="0"/>
+            <item endquery="false" field="comp_off_hours_pending" goto="false" newquery="false" operator="&gt;=" or="true" value="0"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </conditions>
+        <description/>
+        <global>true</global>
+        <inherit>true</inherit>
+        <isolate_script>true</isolate_script>
+        <model_id/>
+        <model_table/>
+        <on_load>true</on_load>
+        <order>100</order>
+        <reverse_if_false>true</reverse_if_false>
+        <run_scripts>true</run_scripts>
+        <script_false><![CDATA[function onCondition() {
+
+	if (g_form.getValue("comp_off_days") > g_form.getValue("se_change_hours_consumed")){
+		g_form.setValue("comp_off_hours_pending", g_form.getValue("comp_off_days") - g_form.getValue("se_change_hours_consumed"));
+		g_form.setValue("comp_off_status", "Partially Taken");
+		jslog("condition 2-1 ");
+	} else {
+		g_form.setValue("comp_off_hours_pending", 0);
+		g_form.setValue("comp_off_status", "New");	
+		jslog("condition 2-2 ");
+	}
+}]]></script_false>
+        <script_true><![CDATA[function onCondition() {
+	if (g_form.getValue("comp_off_days") <= g_form.getValue("se_change_hours_consumed")){
+		g_form.setValue("comp_off_hours_pending", 0);
+		g_form.setValue("comp_off_status", "Taken");
+		jslog("condition 1 ");
+	}
+
+	if (g_form.getValue("se_change_hours_consumed") == 0 || g_form.getValue("se_change_hours_consumed") == '' ){
+		g_form.setValue("comp_off_hours_pending", g_form.getValue("x_486042_se_pjt_tr_comp_off"));
+		g_form.setValue("comp_off_status", "Pending");
+		jslog("condition 2 ");
+	}
+
+	if (g_form.getValue("comp_off_days") > g_form.getValue("se_change_hours_consumed")){
+		g_form.setValue("comp_off_hours_pending", g_form.getValue("x_486042_se_pjt_tr_comp_off") - g_form.getValue("se_change_hours_consumed"));
+		g_form.setValue("comp_off_status", "Partially Taken");
+		jslog("condition 3 ");
+	}
+		
+	
+}]]></script_true>
+        <set_values/>
+        <short_description>Comp-off Hours and status update</short_description>
+        <sys_class_name>sys_ui_policy</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-29 01:23:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>93e7e8d01b60101023c27596cc4bcbbc</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Comp-off Hours and status update</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SE Project Tracker" source="x_486042_se_pjt_tr">69444e861b10101023c27596cc4bcb20</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SE Project Tracker">69444e861b10101023c27596cc4bcb20</sys_scope>
+        <sys_update_name>sys_ui_policy_93e7e8d01b60101023c27596cc4bcbbc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-29 01:52:15</sys_updated_on>
+        <table>x_486042_se_pjt_tr_comp_off</table>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_ui_policy>
+</record_update>

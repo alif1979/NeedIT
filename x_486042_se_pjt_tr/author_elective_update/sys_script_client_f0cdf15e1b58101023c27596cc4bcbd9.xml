@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>true</applies_extended>
+        <condition/>
+        <description/>
+        <field>u_change_number</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>co_crnumber_update</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+
+   //Type appropriate comment here, and begin script below
+	var ga = new GlideAjax("PullCRDetails");
+	ga.addParam('sysparm_name', 'getCRDetails');
+	ga.addParam('sysparm_uChangeNumber', newValue);
+	ga.getXML(callBackFunction);
+	
+	function callBackFunction(response) {
+		var answer = response.responseXML.documentElement.getAttribute('answer');
+		var v = [];
+		var a = answer.split(",");
+		v.push(a[0]);
+		v.push(a[1]);
+		v.push(a[6]);
+		g_form.setValue('change_start_time', v[0]);
+		g_form.setValue('change_finish_time', v[1]);
+		g_form.setValue('description_of_activity', v[2]);
+	}
+   
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-23 02:27:50</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f0cdf15e1b58101023c27596cc4bcbd9</sys_id>
+        <sys_mod_count>70</sys_mod_count>
+        <sys_name>co_crnumber_update</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SE Project Tracker" source="x_486042_se_pjt_tr">69444e861b10101023c27596cc4bcb20</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SE Project Tracker">69444e861b10101023c27596cc4bcb20</sys_scope>
+        <sys_update_name>sys_script_client_f0cdf15e1b58101023c27596cc4bcbd9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-26 09:47:11</sys_updated_on>
+        <table>x_486042_se_pjt_tr_comp_off</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SE Project Tracker">69444e861b10101023c27596cc4bcb20</application>
+        <file_path/>
+        <instance_id>43ac41bddbe393404c1ff70fbf961977</instance_id>
+        <instance_name>dev67414</instance_name>
+        <name>sys_script_client_f0cdf15e1b58101023c27596cc4bcbd9</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;true&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field&gt;u_change_number&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;co_crnumber_update&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+
+   //Type appropriate comment here, and begin script below
+	var ga = new GlideAjax("PullCRDetails");
+	ga.addParam('sysparm_name', 'getCRDetails');
+	ga.addParam('sysparm_uChangeNumber', newValue);
+	ga.getXML(callBackFunction);
+	
+	function callBackFunction(response) {
+		var answer = response.responseXML.documentElement.getAttribute('answer');
+		var v = [];
+		var a = answer.split(",");
+		v.push(a[0]);
+		v.push(a[1]);
+		v.push(a[6]);
+		g_form.setValue('change_start_time', v[0]);
+		g_form.setValue('change_finish_time', v[1]);
+		g_form.setValue('description_of_activity', v[2]);
+	}
+   
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-04-23 02:27:50&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;f0cdf15e1b58101023c27596cc4bcbd9&lt;/sys_id&gt;&lt;sys_mod_count&gt;70&lt;/sys_mod_count&gt;&lt;sys_name&gt;co_crnumber_update&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="SE Project Tracker" source="x_486042_se_pjt_tr"&gt;69444e861b10101023c27596cc4bcb20&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SE Project Tracker"&gt;69444e861b10101023c27596cc4bcb20&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_f0cdf15e1b58101023c27596cc4bcbd9&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-04-26 09:47:11&lt;/sys_updated_on&gt;&lt;table&gt;x_486042_se_pjt_tr_comp_off&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1692045999</payload_hash>
+        <record_name>co_crnumber_update</record_name>
+        <reverted_from/>
+        <source>e9444e861b10101023c27596cc4bcb22</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-26 09:47:11</sys_created_on>
+        <sys_id>e4a04b931bdc501023c27596cc4bcbbf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>171b5e2309e0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-26 09:47:11</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>60a04b9312dc501061380adfc7e1fcbf</update_guid>
+        <update_guid_history>60a04b9312dc501061380adfc7e1fcbf:-1692045999,3bbf4953bd985010ab95b8b9e9865e10:-664453163,b76f05533f985010f60d2646c14678a5:1223724369,804f45534f985010a896f673d1ff93b2:1502866271,a53f0953a69850103c507808a090820f:1797252040,248d4113a4985010b6f793475bfd56a7:-1857778174,482d8ddffc585010da6830cdc9777080:1223724369,e89c499f8858501048c4d6e0cfb984e0:1384633387,93fa895f295850100c6a19cedfb98063:-55635883,302a895f18585010347d9aa907789bdc:-1908571179,ba79091f165850105879b1740b7cff2b:-684913957,3e58411fa65850102fc2185e83030ab4:-2020927260,7018c5db25585010ca3de55b87df5e13:-684471626,28d78ddb6b5850100d55cde4cce49d89:141431072,b487c5dbe858501085dbee144254ab35:-1980686374,4675455b605850106676f3eb820b7bde:-906805391,cbd3c11b4058501020ecde2907ca0c9f:-1923306117,dd73c11ba858501075f69acfece9bda9:22269624,5433411bb6585010ce3212c54641a155:1342901181,e2f2c11bdd58501072f0c680ed4a7b4d:-1302316313,48d2c99740585010db3f1be0c599f1b6:-1096793523,e2920957c258501071c71df72becf1e0:114170893,711209d7195850106f121f22ef8fb15e:-1089461075,5051859763585010bd6c9d77f2fb9782:88947656,b6c0499794585010396b43dc6d4d17d7:-1456028380,10700597a15850102b741db3b7917c4a:1126042675,6f4085579e585010666aede6655391c6:-2092062548,cb2fb45746585010c922e50b93be7a72:1926929169,d87abc535d5850105e6fb8497873ed4e:-1389864405,944abc53365850108887dc529cfea14a:-1419600727,c5249a07879050108a0bf9ec6be54a5f:2129746474,0fe25a0728905010199c27dfcd0c2bf3:-621885648,dec29607ae9050105dc1cb03dd60f674:-1915918623,20a25607d590501098936a3edf110ce9:-512382937,45a19ac309905010082c5fae34e9d0ee:-621885648,9eafc28331905010165a8f3c02244f91:1804334415,0f4dc203a7905010de761409481589af:860870192,ab0d828ff2505010ce27c284d1c316c4:1612499603,e49c020f0a5050103c9f494a3ffa64a0:860870192,0126c2cbd25050107cb980ebcab80afe:510190055,e8f3ce4b7d505010ca9b51124f15e518:1819706612,24b34e4b865050105d620ddeac73b4aa:-206210498,a822794fd5105010681802f268b20148:-669236647,b4917d4b0210501042226f16781ce222:-700512465,3031314f1c1050109b8b64f746b81b8f:-772062637,42b5898ffd9c10101d6b60db6d07f61d:-253593251,01f345cf8f9c1010ce827108f71f4dd5:240192911,2890c9cb799c1010e7b5f20db7de0cb7:2012303685,5510050f9a9c1010d23b8e7abdae6d06:-1825600821,8ebe70cb5b9c1010ce63b8f3bc3f57a0:708289569,db5e30cbed9c10101ab0c3ebf3b286a4:729998217,6d2e788bcc9c10103a64ef50d6cee754:-1552845005,4bfd788b679c1010fb92e4a935b268dc:1099542409,6ebdbc4ba49c10105be5ec613b9c3271:658136485,b31d708b259c101013f0f4cdb295f371:-55000995,c53b7c47f09c10108cf37328112d3c35:618851887,66da740bc79c1010db60c0e456dff2e1:1219115790,578a340b809c101058c961bf5565f93f:-12570607,20787483529c101007b7ec1a304081d2:120771566,0dd668723a90101005fd356ce9aa61ad:-1337453842,4050236ad210101000506491769b1c91:-1725750794,03d2de12ba1c10101aa3bfe937b2f3ca:-503668829,c8921e121d1c1010c5335057b9b6d76c:-1014591670,fa42da12c51c1010565b22b3740f01d4:-768256104,ddcc0eda15d81010e9450dd467335755:-644585329,0a58061a9cd81010e4b8f0190daaa8f1:-608492612,d616061a59d810104b3ec755d1ec84eb:-1730647748,f0d542d6bbd81010cb89753a83463eda:-608492612,578002deca581010df04b8339c5c33c9:-877891392,8d8fb59e74581010f48e57f452ecf53d:2090595613,6f4f715e30581010e0b13456f5e769b5:-991853059</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-29 01:03:51</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>8418e253640c4a1da989c0b9243cd791</sys_id>
+        <sys_metadata>f0cdf15e1b58101023c27596cc4bcbd9</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>co_crnumber_update</sys_name>
+        <sys_package display_value="SE Project Tracker" source="x_486042_se_pjt_tr">69444e861b10101023c27596cc4bcb20</sys_package>
+        <sys_parent display_value="Comp-Off">b5ff8a8e1b10101023c27596cc4bcb58</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="SE Project Tracker">69444e861b10101023c27596cc4bcb20</sys_scope>
+        <sys_scope_delete display_value="">b75d24fec8704c80a3c040d3079da799</sys_scope_delete>
+        <sys_update_name>sys_script_client_f0cdf15e1b58101023c27596cc4bcbd9</sys_update_name>
+        <sys_update_version display_value="sys_script_client_f0cdf15e1b58101023c27596cc4bcbd9">e4a04b931bdc501023c27596cc4bcbbf</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-29 01:03:51</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

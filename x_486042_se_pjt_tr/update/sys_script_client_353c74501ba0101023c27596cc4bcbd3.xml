@@ -4,47 +4,47 @@
         <applies_extended>true</applies_extended>
         <condition/>
         <description/>
-        <field>change_finish_time</field>
+        <field>comp_off_hours_pending</field>
         <global>true</global>
         <isolate_script>true</isolate_script>
         <messages/>
-        <name>co_duration</name>
+        <name>CO_pending_hours_update</name>
         <order/>
         <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
-   if (isLoading || newValue === '') {
+   if (isLoading) {
       return;
    }
 
-   //Type appropriate comment here, and begin script below
-	if (g_form.getValue("change_start_time")) {
-		var ga = new GlideAjax("getTimeDifference");
-		ga.addParam('sysparm_name', 'timeDifference');
-		ga.addParam('sysparm_start', g_form.getValue("change_start_time"));
-		ga.addParam('sysparm_end', newValue);
-		ga.getXML(durationCallBackFunction);
+	
+	if (newValue == 0) {
+		g_form.setValue("comp_off_status", "Taken");
+		return;
+	} else if (!g_form.getValue("se_change_hours_consumed")){
+		g_form.setValue("comp_off_status", "Pending");
+		return;
+	} else if (newValue < g_form.getValue("comp_off_days")) {
+		g_form.setValue("comp_off_status", "Partially Taken");
+		return;
 	}
-		
-	function durationCallBackFunction(response) {
-		var answer = response.responseXML.documentElement.getAttribute('answer');
-		g_form.setValue('cr_duration', answer);
-	}	
+
+	
    
 }]]></script>
         <sys_class_name>sys_script_client</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-04-26 02:35:21</sys_created_on>
+        <sys_created_on>2020-04-29 02:50:38</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>f51dd91f1b98501023c27596cc4bcb03</sys_id>
-        <sys_mod_count>10</sys_mod_count>
-        <sys_name>co_duration</sys_name>
+        <sys_id>353c74501ba0101023c27596cc4bcbd3</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>CO_pending_hours_update</sys_name>
         <sys_overrides/>
         <sys_package display_value="SE Project Tracker" source="x_486042_se_pjt_tr">69444e861b10101023c27596cc4bcb20</sys_package>
         <sys_policy/>
         <sys_scope display_value="SE Project Tracker">69444e861b10101023c27596cc4bcb20</sys_scope>
-        <sys_update_name>sys_script_client_f51dd91f1b98501023c27596cc4bcb03</sys_update_name>
+        <sys_update_name>sys_script_client_353c74501ba0101023c27596cc4bcbd3</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-04-27 02:16:42</sys_updated_on>
+        <sys_updated_on>2020-04-29 03:07:42</sys_updated_on>
         <table>x_486042_se_pjt_tr_comp_off</table>
         <type>onChange</type>
         <ui_type>10</ui_type>
